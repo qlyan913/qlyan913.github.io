@@ -46,6 +46,7 @@ ul.posts li {
     justify-content: space-around;
 }
 .about_img_container{
+     max-width: 420px;
      float: right;
 }
  .about_img{
