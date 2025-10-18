@@ -45,3 +45,8 @@ ul.posts li {
     display: flex;
     justify-content: space-around;
 }
+.about_img_container{
+   margin: 150px;
+   float: right;
+   overflow: hidden;
+}
