@@ -46,11 +46,16 @@ ul.posts li {
     justify-content: space-around;
 }
 .about_img_container{
-   margin: 150px;
-   float: right;
-   overflow: hidden;
+      display:flex;
+      justify-content:center;
+      align-items:flex-start;
 }
  .about_img{
 
-padding: 0 10px;
+      width: 100%;
+      max-width: 420px;
+      height: auto;
+      border-radius: 22px;
+      box-shadow: 0 10px 24px rgba(16,42,67,0.15);
+      object-fit: cover;
  }
