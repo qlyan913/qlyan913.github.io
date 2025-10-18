@@ -46,12 +46,13 @@ ul.posts li {
     justify-content: space-around;
 }
 .about_img_container{
-     max-width: 420px;
+     max-width: 500px;
      float: right;
 }
  .about_img{
   display: block;
   width: 100%;
   max-width: 100%;
-  height: auto;   
+  height: auto;
+  max-height: 500px;
  }
