@@ -139,7 +139,17 @@ a:focus-visible {
     color: #103f6b;
     text-decoration: underline;
 }
+/* Blue navigation links */
+nav a,
+nav a:visited {
+    color: #175a96;
+}
 
+nav a:hover,
+nav a:focus-visible {
+    color: #103f6b;
+    text-decoration: underline;
+}
 /* Position below the name */
 h1 {
     margin-bottom: 8px;
