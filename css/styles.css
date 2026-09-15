@@ -127,3 +127,15 @@ hr {
         height: 202px;
     }
 }
+
+a,
+a:visited {
+    color: #175a96;
+    text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+    color: #103f6b;
+    text-decoration: underline;
+}
