@@ -160,3 +160,10 @@ h1 {
     font-size: 1.1rem;
     color: #596577;
 }
+html {
+    scroll-behavior: smooth;
+}
+
+h2[id] {
+    scroll-margin-top: 24px;
+}
