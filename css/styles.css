@@ -43,16 +43,37 @@ ul.posts li {
 }
 .flex-container {
     display: flex;
-    justify-content: space-around;
+    align-items: flex-start;
+    gap: 32px;
 }
-.about_img_container{
-     max-width: 500px;
-     float: right;
+
+.flex-container > .blurb {
+    flex: 1;
+    min-width: 0;
 }
- .about_img{
-  display: block;
-  width: 100%;
-  max-width: 100%;
-  height: auto;
-  max-height: 700px;
- }
+/* Align the first paragraph with the photo */
+.flex-container > .blurb > p:first-child {
+    margin-top: 0;
+}
+
+/* Keep the photo from shrinking */
+.about_img_container {
+    flex: 0 0 180px;
+}
+
+.about_img {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+/* Place the photo above the biography on phones */
+@media (max-width: 700px) {
+    .flex-container {
+        flex-direction: column-reverse;
+    }
+
+    .about_img_container {
+        flex: none;
+        width: 180px;
+    }
+}
