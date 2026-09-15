@@ -139,3 +139,14 @@ a:focus-visible {
     color: #103f6b;
     text-decoration: underline;
 }
+
+/* Position below the name */
+h1 {
+    margin-bottom: 8px;
+}
+
+.position {
+    margin: 0 0 28px;
+    font-size: 1.1rem;
+    color: #596577;
+}
