@@ -167,3 +167,12 @@ html {
 h2[id] {
     scroll-margin-top: 24px;
 }
+
+/* Space between navigation and the page heading */
+.container {
+  padding-top: 16px;
+}
+
+.container h1 {
+  margin-top: 0;
+}
