@@ -1,43 +1,199 @@
 <!DOCTYPE html>
-<html>
- <head>
-  <link rel="stylesheet" href="/css/styles.css">
-   <title>Qile Yan's Homepage</title>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
- </head>
- <body >     
-   <nav>
-     <ul>
-      <li><a href="/index.html">Home</a></li>
-      <li><a href="/research.html">Research</a></li>
-      <li><a href="/teaching.html">Teaching</a></li>
-     </ul>
-   </nav>
-   <div class="container">
-     <div class="blurb">
-       <h1>Qile Yan (严琪乐)</h1>
-      <p class="position">
-      Assistant Professor · Tongji University
-     </p>
-       <p> 
-        <strong>Email</strong>: qlyan@tongji.edu.cn
-       <br>
-         <strong>Office</strong>: Room 204, Ningjing Building
-       </p>
+  <meta name="description" content="Qile Yan, Assistant Professor at Tongji University. Research in numerical analysis, PDEs on manifolds and point clouds, scientific machine learning, and wave localization.">
+  <title>Qile Yan's Homepage</title>
+  <link rel="stylesheet" href="https://qlyan913.github.io/css/styles.css">
+  <style>
+    /* These additions apply only to the homepage. */
+    .home-page h1 {
+      margin-bottom: 12px;
+    }
 
-       <div class="flex-container">
-         <div class="blurb">
-       <p>  I am a tenure-track Assistant Professor in the School of Mathematical Sciences at Tongji University. Previously, I was a Postdoctoral Associate at the University of Minnesota with <a href="https://www-users.cse.umn.edu/~arnold/">Prof. Douglas N. Arnold</a>, as part of the <a href="https://cse.umn.edu/wave">Simons Collaboration on Localization of Waves</a>. I obtained my Ph.D. degree in mathematics from the Penn State University in 2023, under the supervision of <a href="https://jharlim.github.io/myhomepage/">Prof. John Harlim</a>. Here is my <a href="https://qlyan913.github.io/CV.pdf">CV</a> (updated May. 2026) and <a href="https://scholar.google.com/citations?hl=en&user=HIokDtkAAAAJ">Google Scholar profile</a>.
-            <br>
-           <br>
-          My broad research interests lie in numerical analysis and applied mathematics, with a recent focus on developing numerical methods for solving partial differential equations (PDEs) on point clouds and on investigating localization phenomena in disordered media. </p>
-         </div>
-         <div class="about_img_container">
-          <img src="./img/Qile_Yan.jpg" class="about_img">
-         </div>
-       </div> 
-     
-   </div>
-  </div>
- </body>
+    .name-chinese {
+      display: block;
+      margin-top: 8px;
+      color: #596577;
+      font-size: 1.3rem;
+      font-weight: 400;
+      line-height: 1.5;
+    }
+
+    .home-page .position {
+      margin-bottom: 20px;
+    }
+
+    .home-details {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+      gap: 56px;
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid #d8dee4;
+    }
+
+    .home-details h2 {
+      margin: 0 0 18px;
+      color: #111827;
+      font-size: 1.45rem;
+      line-height: 1.35;
+    }
+
+    .interest-list {
+      margin: 0;
+      padding-left: 22px;
+    }
+
+    .interest-list li {
+      margin-bottom: 8px;
+      padding-left: 2px;
+    }
+
+    .education-list {
+      display: grid;
+      gap: 18px;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .education-list li {
+      display: grid;
+      grid-template-columns: 25px minmax(0, 1fr);
+      gap: 12px;
+      align-items: start;
+    }
+
+    .education-icon {
+      width: 25px;
+      height: 25px;
+      margin-top: 2px;
+      fill: currentColor;
+    }
+
+    .education-degree {
+      display: block;
+      font-weight: 500;
+      line-height: 1.5;
+    }
+
+    .education-school {
+      display: block;
+      margin-top: 3px;
+      color: #596577;
+      font-size: 0.94em;
+      line-height: 1.5;
+    }
+
+    @media (max-width: 700px) {
+      .name-chinese {
+        font-size: 1.2rem;
+      }
+
+      .home-details {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 32px;
+        margin-top: 28px;
+        padding-top: 26px;
+      }
+
+      .home-details h2 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <nav aria-label="Main navigation">
+    <ul>
+      <li><a href="https://qlyan913.github.io/index.html" aria-current="page">Home</a></li>
+      <li><a href="https://qlyan913.github.io/research.html">Research</a></li>
+      <li><a href="https://qlyan913.github.io/teaching.html">Teaching</a></li>
+    </ul>
+  </nav>
+
+  <main class="container home-page">
+    <header>
+      <h1>Qile Yan <span class="name-chinese" lang="zh-Hans">严琪乐</span></h1>
+      <p class="position">Assistant Professor · Tongji University</p>
+      <p>
+        <strong>Email</strong>: <a href="mailto:qlyan@tongji.edu.cn">qlyan@tongji.edu.cn</a><br>
+        <strong>Office</strong>: Room 204, Ningjing Building
+      </p>
+    </header>
+
+    <div class="flex-container">
+      <div class="blurb">
+        <p>
+          I am a tenure-track Assistant Professor in the School of Mathematical
+          Sciences at Tongji University. Previously, I was a Postdoctoral Associate
+          at the University of Minnesota with
+          <a href="https://www-users.cse.umn.edu/~arnold/">Prof. Douglas N. Arnold</a>,
+          as part of the
+          <a href="https://cse.umn.edu/wave">Simons Collaboration on Localization of Waves</a>.
+          I obtained my Ph.D. degree in mathematics from the Pennsylvania State
+          University in 2023, under the supervision of
+          <a href="https://jharlim.github.io/myhomepage/">Prof. John Harlim</a>.
+          Here is my <a href="https://qlyan913.github.io/CV.pdf">CV</a> (updated May 2026) and
+          <a href="https://scholar.google.com/citations?hl=en&amp;user=HIokDtkAAAAJ">Google Scholar profile</a>.
+        </p>
+        <p>
+          My broad research interests lie in numerical analysis and applied
+          mathematics, with a recent focus on developing numerical methods for
+          solving partial differential equations (PDEs) on point clouds and on
+          investigating localization phenomena in disordered media.
+        </p>
+      </div>
+      <div class="about_img_container">
+        <img src="https://qlyan913.github.io/img/Qile_Yan.jpg" class="about_img" alt="Qile Yan" width="190" height="240">
+      </div>
+    </div>
+
+    <div class="home-details">
+      <section aria-labelledby="interests-heading">
+        <h2 id="interests-heading">Research Interests</h2>
+        <ul class="interest-list">
+          <li>Numerical analysis</li>
+          <li>Scientific computing</li>
+          <li>Wave localization</li>
+        </ul>
+      </section>
+
+      <section aria-labelledby="education-heading">
+        <h2 id="education-heading">Education</h2>
+        <ul class="education-list">
+          <li>
+            <svg class="education-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+            </svg>
+            <div>
+              <span class="education-degree">Ph.D. in Mathematics, 2018–2023</span>
+              <span class="education-school">The Pennsylvania State University</span>
+            </div>
+          </li>
+          <li>
+            <svg class="education-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+            </svg>
+            <div>
+              <span class="education-degree">M.Phil. in Mathematics, 2016–2018</span>
+              <span class="education-school">The Chinese University of Hong Kong</span>
+            </div>
+          </li>
+          <li>
+            <svg class="education-icon" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+              <path d="M5 13.18v4L12 21l7-3.82v-4L12 17l-7-3.82zM12 3L1 9l11 6 9-4.91V17h2V9L12 3z"/>
+            </svg>
+            <div>
+              <span class="education-degree">B.Sc. in Applied Mathematics, 2012–2016</span>
+              <span class="education-school">Tongji University</span>
+            </div>
+          </li>
+        </ul>
+      </section>
+    </div>
+  </main>
+</body>
 </html>
